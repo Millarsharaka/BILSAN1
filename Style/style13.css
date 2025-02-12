@@ -1,0 +1,195 @@
+body {
+    overflow-x: hidden !important; /* إخفاء التمرير الأفقي */
+    overflow-y: hidden !important; /* إخفاء التمرير العمودي على الصفحة */
+    background-color:  white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    
+    
+    justify-content: space-between; /* فصل المحتوى بين النموذج والصورة */
+}
+
+/* حاوية النموذج */
+.login-form-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* تصميم النموذج */
+.login-form {
+    padding: 30px;
+    background-color: transparent; /* جعل الخلفية شفافة */
+    border-radius: 0; /* إزالة الحواف الدائرية */
+    box-shadow: none; /* إزالة الظل */
+    width: 70%;
+    margin-left: auto;
+    margin-right: -150px;
+    max-width: 600px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 25px; /* جعل الحواف دائرية */
+    padding: 10px;
+    font-size: 1rem;
+    width: 90%;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: #c5267c;
+    border-color: #c5267c;
+    border-radius: 25px; /* جعل الحواف دائرية */
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #a51766;
+    border-color: #a51766;
+}
+
+/* حاوية الصورة */
+.login-image-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: right; /* محاذاة النص لليمين داخل الحاوية */
+}
+
+.login-image {
+    width: 110%;
+    height: auto;
+    border-radius: 10px 0 0 25%; /* تحديد الحواف الدائرية */
+    transform: translateY(-20px); /* رفع الصورة للأعلى بمقدار 20px */
+}
+
+
+.login-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(248, 204, 228, 0.5);
+    border-radius: 10px 0 0 25%; /* تحديد الحواف الدائرية */
+    pointer-events: none;
+}
+
+.bilsan-logo {
+    position: absolute;
+    top: 50%;
+    right: 25%; /* تحريك الشعار لليمين قليلاً */
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+.bilsan-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.learn-more {
+    position: absolute;
+    bottom: 200px; /* رفع المربع للأعلى */
+    right: 200px; /* زيادة القيمة لتحريكه لليسار */
+    border: 2px solid white; /* إضافة حواف بيضاء */
+    padding: 8px 15px; /* تصغير المساحة الداخلية */
+    border-radius: 10px; /* زوايا دائرية */
+    background-color: transparent; /* خلفية شفافة */
+    text-align: center; /* محاذاة النص للوسط */
+    color: #fff; /* لون النص */
+    font-size: 14px; /* تقليل حجم النص */
+}
+
+.learn-more a {
+    color: #fff; /* لون النص */
+    text-decoration: none; /* إزالة الخط السفلي */
+    font-size: 14px; /* حجم النص العادي */
+    display: inline-block; /* إبقاء النص داخل المربع */
+}
+
+.learn-more a span {
+    font-size: 18px; /* حجم النص للسطر الثاني */
+    font-weight: bold; /* جعل النص غامقًا */
+    display: block; /* فصل السطر الثاني */
+}
+
+.learn-more a:hover {
+    text-decoration: underline; /* التأثير عند تمرير الفأرة */
+}
+
+/* التنسيق للأجهزة المحمولة */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .login-form-container {
+        width: 100%;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .login-image-container {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .login-image {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .login-image::before {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .bilsan-logo {
+        width: 90%;
+    }
+}
+
+/* تنسيق خانة الاختيار */
+.form-check {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}

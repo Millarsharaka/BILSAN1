@@ -1,0 +1,135 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.page-title {
+    position: absolute;
+    top: 70px;
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 30px;
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+.sub-title {
+    color: #2B3674 !important;
+    font-weight: bold;
+    position: relative;
+    top: 120px;
+    right: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* صندوق الخيارات لإرسال الرسائل */
+.options-container {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 20px; /* تقليل المسافة بين المستطيلات */
+    padding: 21px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* تغيير إلى center لإلغاء التباعد */
+    align-items: center;
+    position: relative;
+    top: 110px;
+}
+.options-container a {
+    text-decoration: none;
+    color: #6c757d;  /* اللون الرمادي الأصلي */
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5; /* تحديد ارتفاع الخط (line-height) */
+    margin: 0 10px; /* إضافة هامش صغير بين الروابط */
+    transition: color 0.3s ease-in-out; /* إضافة تأثير الانتقال */
+}
+.white-box {
+    background-color: white;
+    padding: 40px; /* تقليل الحشو */
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 140px; /* تقليل المسافة من الأعلى */
+}
+
+.input-label {
+    margin-bottom: 3px; /* تقليل المسافة أسفل العنوان */
+    font-weight: bold;
+    display: block;
+}
+
+.input-container {
+    position: relative;
+    width: 200px;
+    margin-bottom: 10px; /* إضافة مسافة أسفل مربع الإدخال */
+}
+
+.input-field-small {
+    width: 100%;
+    padding: 5px 30px 5px 5px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    pointer-events: none;
+}
+.submit-button {
+    background-color: #AB0362; /* لون زهري */
+    color: white; /* لون النص أبيض */
+    border: none; /* إزالة الحدود */
+    padding: 10px 20px; /* مساحة داخلية */
+    border-radius: 20px; /* حواف دائرية */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الزر */
+    font-size: 16px; /* حجم الخط */
+    display: block; /* لجعله يظهر في سطر جديد */
+    margin-top: 15px; /* مسافة من الأعلى */
+    margin-right: -10; /* هامش أيمن تلقائي */
+    margin-left: auto; /* هامش أيسر تلقائي - توسيط الزر */
+}
+
+.submit-button:hover {
+    background-color: #910251; /* لون أغمق عند التحويم */
+}
+.input-field-small::placeholder {
+    color: #a9a9a9; /* لون سكني */
+    opacity: 1; /* تأكد من أن النص ليس شفافًا */
+}

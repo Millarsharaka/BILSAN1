@@ -1,0 +1,191 @@
+body {
+  overflow-x: hidden !important; /* إخفاء التمرير الأفقي */
+  overflow-y: hidden !important; /* إخفاء التمرير العمودي على الصفحة */
+    overflow-x: hidden !important;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+iframe {
+    border: none;
+    overflow: hidden;
+}
+
+.content {
+    padding: 20px;
+}
+
+.form-table {
+    border: none; /* remove border from the table */
+     background-color: white;
+      border-collapse: collapse;
+}
+
+.form-table th {
+    background-color: #f0f0f0; /* Optional: Light background for table headers */
+    padding: 40px !important; /* زيادة المسافة الداخلية */
+    border: none; /* Remove border from header cells */
+        color: #888888; /* Set table header color to light grey */
+     white-space: nowrap;
+    font-size: 16px;
+}
+
+.form-table td {
+    padding: 28px !important;  /* زيادة المسافة الداخلية */
+    border: none; /* Remove border from table cells */
+      font-size: 16px;
+}
+
+.show-attachment-link {
+   color: #AB0362;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    display: inline-flex; /* Use flexbox for icon alignment */
+    align-items: center; /* Align icon vertically */
+    text-decoration: none; /* Remove underline */
+     white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.show-attachment-link img {
+  width: 16px; /* Adjust the width as needed */
+  height: 16px; /* Adjust the height as needed */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+
+
+
+h2.font-weight-bold {
+    color:#AB0362; /* اللون الزهري */
+    margin-top: 15px;;
+    font-size: 35px;
+    
+
+
+}
+
+h2.font-weight-bold2 {
+    color:#000000;
+    font-size: 20px;
+    margin-top: 80px !important;
+    font-family: DM Sans;
+
+    
+}
+nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item a {
+    color: #888888;
+    margin-top: 20px;
+ }
+ nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item {
+    margin-top: -100px; /* سيؤثر هذا على موضع عنصر الـ li وما يحتويه */
+  }
+
+.action-cell {
+  white-space: nowrap;
+  text-align: center;
+}
+/* تعديل الزر والصور داخله */
+
+
+.action-cell .btn.btn-outline-secondary {
+  width: 70px;
+  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* هذه الخاصية مهمة لتوسيط الصورة والنص */
+   border: none; /* ازالة الاطار */
+}
+
+.action-cell .btn.btn-outline-secondary img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  image-rendering: pixelated;
+    margin-left: 5px; /* إضافة هامش أيسر بين النص والصورة */
+}
+
+.action-cell .btn.btn-outline-secondary span {
+  color: green; /* تغيير لون النص إلى الأخضر */
+  font-size: 1em; /* تصغير حجم الخط */
+    margin-right: 3px;
+}
+/* ... باقي الـ CSS السابق ... */
+
+/* جعل حواف الجدول دائرية */
+.form-table {
+    border-radius: 20px; /* يمكنك تغيير قيمة 10px لتعديل مقدار الدائرية */
+    overflow: hidden; /* ضروري لإخفاء حواف العناصر الداخلية التي قد تتجاوز حواف الجدول */
+       border-collapse: collapse;
+}
+
+/* جعل حواف رؤوس الجدول دائرية */
+.form-table th:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+
+}
+.form-table th:last-child {
+     border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+}
+.form-table tr:last-child td:first-child{
+ border-bottom-left-radius: 10px;
+
+}
+.form-table tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+/* ... باقي الـ CSS السابق ... */
+
+/* توسيط النص في عمود "Section" */
+.form-table th:nth-child(3), /* استهداف رأس العمود الثالث */
+.form-table td:nth-child(3) { /* استهداف بيانات العمود الثالث */
+    text-align: center;
+}
+
+   .form-table th {
+    color: #A0AEC0; 
+    white-space: nowrap;
+    padding: 20px !important;
+
+}
+
+/* ... باقي الـ CSS الخاص بك ... */
+.form-table td {
+    
+      font-size: 16px;
+      padding: 17px !important; /* تقليل المسافة الداخلية */
+}
+.title-container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px 15px 0 0;
+  margin-bottom: 0;
+  
+}
+.content{
+    position: relative;
+ }
+ .title-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+  }
+  .table-header {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    border-bottom: none;
+  }
+.table-header h2.font-weight-bold2 {
+    margin: 0; /* إزالة الهوامش الداخلية لعنوان الجدول */
+    
+}

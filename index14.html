@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bage14</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Style/style14.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+
+  <!-- قائمة جانبية -->
+<iframe src="menu2.html" width="260px" height="786px" style="position: fixed; border: none; overflow-y: hidden;"></iframe>
+<iframe src="Search2.html" width="80%" height="60px" style="position: fixed; top: 0; left: 0; border: none; overflow-x: hidden;"></iframe>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav aria-label="breadcrumb" dir="rtl">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">الصفحات</a></li>
+                <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+            </ol>
+        </nav>
+
+        <main class="col-md-12">
+            <h2 class="page-title">الرئيسية</h2> 
+
+            <div class="content-wrapper" style="position: relative;">
+                <!-- بطاقة معلومات الطالب 1 -->
+                <div class="student-card">
+                    <h3 class="student-card-title">معلومات الطالب</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><span class="info-label">رقم الطالب:</span>  <span class="info-value">  202010271</span></p>
+                            <p><span class="info-label"> الفصل الدراسي:</span> <span class="info-value">   الفصل الأول 2024\2025</span></p>
+                            <p><span class="info-label"> التخصص:</span> <span class="info-value">  علم الحاسوب</span></p>
+                            <p><span class="info-label"> المرشد الأكاديمي:</span> <span class="info-value"> أ.رأفت عمارنة</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><span class="info-label">اسم الطالب:</span>  <span class="info-value"> حارث أحمد امبدا سماره</span></p>
+                            <p><span class="info-label"> الكلية:</span>  <span class="info-value">تكنولوجيا المعلومات</span></p>
+                            <p><span class="info-label"> الحالة:</span> <span class="info-value graduate"> خريج</span></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="labels-container">
+                    <div class="label-item">
+                        <img src="Images/Group3.png" alt="Info Icon">
+                        <div>
+                            <p class="light-text">المعدل التراكمي</p>
+                            <p class="bold-text">80.54</p>
+                        </div>
+                    </div>
+                    <div class="label-item">
+                        <img src="Images/Group2.png" alt="Calendar Icon">
+                        <div>
+                            <p class="light-text">انجاز الخطة</p>
+                            <p class="bold-text">100%</p>
+                        </div>
+                    </div>
+                    <div class="label-item">
+                        <img src="Images/Group1.png" alt="User Icon">
+                        <div>
+                            <p class="light-text">مستوى الطالب</p>
+                            <p class="bold-text">4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- البطاقة الثانية لمعلومات الطالب -->
+                <div class="student-card student-card-small">
+                    <h3 class="student-card-title">معلومات الطالب</h3>
+                    <p><span class="info-label"> الواجب الدراسي</span></p>
+                    <p><span class="info-label"> الرصيد</span></p>
+                    <p><span class="info-label"> تنبيهات الغياب</span></p>
+                </div>
+
+                <!-- جدول الكتب المستعارة -->
+                <div class="borrowed-books-container">
+                    <div class="bg-white shadow rounded p-3">
+                        <h6 class="fw-bold">الكتب المستعارة</h6>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>رقم المستخدم</th>
+                                    <th>عنوان الكتب</th>
+                                    <th>تاريخ الاستعارة</th>
+                                    <th>تاريخ الارجاع </th> 
+                                    <th>عدد أيام التأخير</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1516659</td>
+                                    <td>فن اللامبالاة</td>
+                                    <td>12-10-2024</td>
+                                    <td>12-11-2024</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1516659</td>
+                                    <td>فن اللامبالاة</td>
+                                    <td>12-10-2024</td>
+                                    <td>12-11-2024</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+<!-- جدول جديد تحت الـ labels-container -->
+<div class="new-table-container">
+    <div class="bg-white shadow rounded p-3">
+        <h6 class="fw-bold"> جدول الطالب</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th> رمز المقرر</th>
+                    <th>اسم المقرر </th> 
+                    <th>الشعبة</th>
+                    <th> النشاط</th>
+                    <th>قاعة</th>
+                    <th>الوقت</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+                <tr>
+                    <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+                <tr>
+                    <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+                <tr>
+                    <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+                <tr>
+                    <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+                <tr>
+                    <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+                <tr>
+                    <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+                <tr>
+                      <td>x21530</td>
+                    <td>رسم جرافيكي</td>
+                    <td>202</td>
+                    <td>محاضرة</td>
+                    <td>214</td>
+                    <td>الأربعاء \11:30-12:30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+  
+<div class="news-vote-container">
+<!-- أخبار البوابة الالكترونية -->
+<div class="news-box">
+    <h6 class="fw-bold">أخبار البوابة الالكترونية</h6>
+    <div class="news-item">
+        <img src="Images/R22.png" alt="خبر 1">
+        <div class="news-text">
+            <h6 class="news-title">الاجتماع الثاني للجنة دراسة التقارير br الطبية للفصل الثاني</h6>
+            <p>بواسطة د. أحمد علي</p>
+            <span class="news-time">1 ساعة</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <img src="Images/R11.png" alt="خبر 2">
+        <div class="news-text">
+            <h6 class="news-title">الاجتماع الثاني للجنة دراسة التقارير <br> الطبية للفصل الثاني</h6>
+            <p>بواسطة د. أحمد علي</p>
+            <span class="news-time">1 ساعة</span>
+        </div>
+    </div>
+</div>
+
+<!-- التصويت -->
+<div class="vote-box">
+    <h6 class="vote-title">التصويت</h6>
+    <p>كيف تقيم خدمة التسجيل عبر البوابة؟</p>
+    <div class="vote-option">
+        <input type="radio" id="vote-good" name="vote" value="good">
+        <label for="vote-good">جيد</label>
+    </div>
+    <div class="vote-option">
+        <input type="radio" id="vote-very-good" name="vote" value="very-good" checked>
+        <label for="vote-very-good">جيد جدا</label>
+    </div>
+    <div class="vote-option">
+        <input type="radio" id="vote-excellent" name="vote" value="excellent">
+        <label for="vote-excellent">ممتاز</label>
+    </div>
+    <button class="vote-button">تصويت</button>
+</div>
+</div>
+        </main>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

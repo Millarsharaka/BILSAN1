@@ -1,0 +1,134 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Cairo', sans-serif !important;
+
+}
+.page-title {
+    position: absolute;
+    top: 70px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+.breadcrumb {
+    position: absolute;
+    top: 30px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+.custom-circle-box {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 7px;
+    border: 2px solid #dee2e6;
+    text-align: center;
+    background-color: white;
+    margin-top: 120px; /* زيادة المسافة للأسفل */
+    transform: translateX(-20px); /* تحريك العنصر إلى اليسار بمقدار 40px */
+    height: 50px;
+    margin-left: 20px;
+}
+  .custom-circle-box span {
+      margin: 0 6px;
+      white-space: nowrap; /* Prevent text from wrapping */
+       color: #91024d; /* لون زهري */
+      
+
+  }
+  .small-text {
+    font-size: 12px !important; /* تصغير حجم النص */
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+
+.input-icon {
+    position: absolute;
+    left: 10px; /* ضبط الموقع من اليسار */
+    top: 50%;
+    transform: translateY(-50%); /* ضبط تموضع الأيقونة في المنتصف */
+    width: 10px; /* حجم الأيقونة */
+    height: 10px;
+    pointer-events: none; /* منع التفاعل مع الأيقونة */
+}
+
+  .sub-title {
+    color: #2B3674 !important; /* لون النص أسود */
+    font-weight: bold; /* جعل الخط غامقًا */
+
+    position: relative;
+    top: 120px;  /* تحريك العنوان للأسفل */
+    right: 20px;   /* تحريك العنوان لليمين */
+    text-align: right;  /* محاذاة العنوان لليمين */
+    font-size: 20px;
+}
+.custom2-button {
+    background-color: #AB0362 !important;
+    border-color: #AB0362 !important;
+    margin-top: 120px !important;
+    font-size: 1rem !important;
+    padding: 0.4rem 1rem !important;
+    position: relative !important; /* إضافة position: relative */
+    right: -50px !important; /* تحريك الزر إلى اليمين باستخدام right */
+    margin-right: 0 !important; /* إزالة الهامش الأيمن الأصلي */
+    top: -9px;
+}
+
+.custom2-button:hover {
+    background-color: #91024d !important;
+    border-color: #91024d !important;
+}
+.custom-table {
+    border-collapse: collapse;
+    width: 70%; /* تقليل العرض إلى 80% من عرض الحاوية الأصلية */
+    margin: 40px auto; /* جعل الجدول في المنتصف عموديًا وأفقيًا */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.custom-table th,
+.custom-table td {
+    padding: 16px;
+    text-align: center;
+    border: none;
+    background-color: white; /* خلفية بيضاء لكل الخلايا */
+
+}
+
+.custom-table th {
+    background-color: white;
+    font-weight: normal;
+    color: #A0AEC0;
+}
+
+.custom-table tbody tr {
+    background-color: white;
+    color: #1e3a8a; /* لون النص الكحلي */
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: white;
+}

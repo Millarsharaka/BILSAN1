@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu2</title>
+    <link rel="stylesheet" href="Style/menu2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+   
+    
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar position-relative">
+                <!-- أيقونة صغيرة أعلى يمين القائمة -->
+                <div class="position-absolute" style="top: -5px; right: 60px;">
+                    <img src="Images/point.png" alt="Small Icon" height="10">
+                </div>
+                
+                <div class="text-center p-3">
+                    <img src="Images/Bilsan iums 1.svg" alt="New Icon" height="40" style="margin-top: 5px;">
+                </div>
+
+                <div class="position-absolute text-center p-3" style="left: -19px; top: 68px;">
+                    <img src="Images/HpmeIcone.png" alt="New Icon" height="30">
+                </div>
+                
+
+               <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between active" href="#" >
+                           <div class="d-flex align-items-center" style="gap: 8px;">
+                               <img src="Images/my-icon.png" alt="" height="20" class="me-2"> الرئيسية
+                           </div>
+                           <i class="fas fa-chevron-down" style="margin-left: 5px;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#menuModesDropdown">
+                            أوضاع القائمة
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div id="menuModesDropdown" class="collapse">
+                            <ul class="nav flex-column p-0 m-0">
+                                <li class="nav-item">
+                                    <a class="nav-link menu-item" href="#">Light menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-item" href="#">Dark menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-item" href="#">Static menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-item" href="#">Overlay menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#languageDropdown">
+                            اللغة
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div id="languageDropdown" class="collapse">
+                            <ul class="nav flex-column p-0 m-0">
+                                <li class="nav-item"><a class="nav-link" href="#">العربية</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">الإنجليزية</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#academicDropdown">
+                            اكاديمي
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div id="academicDropdown" class="collapse">
+                            <ul class="nav flex-column p-0 m-0">
+                                <li class="nav-item"><a class="nav-link" href="#">احتساب القسط الدراسي</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">جدول الطالب</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">السجل الأكاديمي</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">الحركات الأكاديمية</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">التقييم</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">التراسل</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">طلب الانسحاب المتأخر من مساق</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">طلب الانسحاب من الفصل</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#templatesDropdown">
+                            القوالب
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div id="templatesDropdown" class="collapse">
+                            <ul class="nav flex-column p-0 m-0">
+                                <li class="nav-item"><a class="nav-link" href="#"> </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"> </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#personalDropdown">
+                            شخصي
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div id="personalDropdown" class="collapse">
+                            <ul class="nav flex-column p-0 m-0">
+                                <li class="nav-item"><a class="nav-link" href="#"> </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"> </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#registrationDropdown">
+                            التسجيل
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div id="registrationDropdown" class="collapse">
+                            <ul class="nav flex-column p-0 m-0">
+                                <li class="nav-item"><a class="nav-link" href="#">استمارة الخرجين</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">تغيير كلمة المرور</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#buildingsDropdown">
+                            المباني والقاعات
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <div id="buildingsDropdown" class="collapse">
+                        <ul class="nav flex-column p-0 m-0">
+                            <li class="nav-item"><a class="nav-link" href="#">استمارة </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">بوابة الخدمات الالكترونية</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#" style="gap: 9px;">
+                            <img src="Images/text.png" alt="Icon 1"> نص
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#" style="gap: 9px;">
+                            <img src="Images/Group-person.svg" alt="Icon 2"> نص
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+         
+     
+    
+                <!-- المحتوى الرئيسي هنا -->
+           </main>
+        </div>
+    </div>
+
+    <script src="Script/all.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+</body>
+</html>

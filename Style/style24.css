@@ -1,0 +1,77 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+.page-title {
+    position: absolute;
+    top: 70px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+.breadcrumb {
+    position: absolute;
+    top: 30px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+.custom-circle-box {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 7px;
+    border: 2px solid #dee2e6;
+    text-align: center;
+    background-color: white;
+    margin-top: 120px; /* زيادة المسافة للأسفل */
+    transform: translateX(-20px); /* تحريك العنصر إلى اليسار بمقدار 40px */
+    height: 50px;
+    margin-left: 20px;
+    position: relative; /* السماح بتموضع الأيقونة داخل العنصر */
+
+}
+  .custom-circle-box span {
+      margin: 0 6px;
+      white-space: nowrap; /* Prevent text from wrapping */
+       color: #91024d; /* لون زهري */
+      
+
+  }
+  .small-text {
+    font-size: 12px !important; /* تصغير حجم النص */
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+
+.input-icon {
+    position: absolute;
+    left: 10px; /* ضبط الموقع من اليسار */
+    top: 50%;
+    transform: translateY(-50%); /* ضبط تموضع الأيقونة في المنتصف */
+    width: 10px; /* حجم الأيقونة */
+    height: 10px;
+    pointer-events: none; /* منع التفاعل مع الأيقونة */
+}

@@ -1,0 +1,107 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.page-title {
+    position: absolute;
+    top: 70px;
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 30px;
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+/* تنسيق عنوان القسم */
+.section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+  }
+  .table {
+    background-color: white; /* خلفية بيضاء */
+    margin-top: 120px !important; /* إضافة مساحة علوية لإنزال الجدول */
+    width: 70%; /* تقليل العرض إلى 80% */
+    height: 300px;
+    border-radius: 0px 0px 30px 30px;
+    margin-left: auto; /* توسيط الجدول */
+    margin-right: auto; /* توسيط الجدول */
+}
+
+  h5 {
+    color: blue;
+    font-size: 18px;
+}
+
+  .table th,
+  .table td {
+    padding: 0.80rem;
+    vertical-align: top;
+    border: none; /* إزالة الحدود */
+  }
+
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid white !important; /* Set border color to white */
+    font-size: 1.0rem;
+    color: #A0AEC0;
+    font-weight: normal;
+}
+  .table-bordered {
+    border: none; /* إزالة الحدود */
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    border: none; /* إزالة الحدود */
+  }
+
+  .table-bordered thead th,
+  .table-bordered thead td {
+    border: none; /* إزالة الحدود */
+  }
+
+  /* تنسيق المستطيل الرمادي داخل الجدول */
+  .gray-rectangle {
+    background-color: white; /* خلفية بيضاء */
+    border-radius: 0.30rem !important;
+  }
+
+  /* تنسيق النص الوردي */
+  .pink-text {
+    color: #e91e63;
+  }
+
+  /* تنسيق الأعمدة داخل المستطيل الرمادي */
+  .rectangle-column {
+    text-align: center;
+  }

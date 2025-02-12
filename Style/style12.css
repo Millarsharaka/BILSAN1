@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden !important; /* إخفاء التمرير الأفقي */
+    overflow-y: hidden !important; /* إخفاء التمرير العمودي على الصفحة */
+    margin: 0;
+    font-family: 'Cairo', sans-serif !important;
+       background-color:  white;
+
+}
+
+img#full-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* تصميم المودال */
+.filter-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1050;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* تصميم زر الإغلاق */
+.filter-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* تنسيق الحقول داخل المودال */
+.filter-modal label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.875rem;
+}
+
+.filter-modal .form-control {
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+}
+
+/* تنسيق زر التطبيق */
+.filter-modal .btn-primary {
+    background-color: #b62382;
+    border-color: #b62382;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* التأثير عند التمرير على الزر */
+.filter-modal .btn-primary:hover {
+    background-color: #911c69;
+    border-color: #911c69;
+}
+
+/* تنسيق عنوان المودال */
+.filter-modal h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* تنسيق محتوى المودال */
+.filter-modal .filter-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+/* تصميم عنوان الفلاتر داخل المودال */
+.filter-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+.filter-title .filter-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+/* تحسين التنسيق إذا لزم الأمر */
+#filterModal .filter-content {
+    overflow: hidden;
+}

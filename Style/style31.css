@@ -1,0 +1,115 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+.page-title {
+    position: absolute;
+    top: 70px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+.breadcrumb {
+    position: absolute;
+    top: 30px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+
+.sub-title {
+    color: #2B3674 !important; /* لون النص أسود */
+    font-weight: bold; /* جعل الخط غامقًا */
+
+    position: relative;
+    top: 120px;  /* تحريك العنوان للأسفل */
+    right: 20px;   /* تحريك العنوان لليمين */
+    text-align: right;  /* محاذاة العنوان لليمين */
+    font-size: 20px;
+}
+
+
+
+        /* Add margin to move the table down */
+        .table-container {
+            margin-top: 160px;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 1rem;
+            color: #212529;
+            border-collapse: collapse;
+            border-radius: 10px;
+            /* Rounded corners for the table */
+            overflow: hidden;
+            /* Ensures the rounded corners are visible */
+            table-layout: auto;
+            /* Allow column widths to adjust based on content */
+            font-size: 16px;
+            /* Even Smaller font size */
+        }
+
+        .table th,
+        .table td {
+            padding: 0.9rem;
+            /* Slightly increased padding for cell height */
+            vertical-align: middle;
+            text-align: center;
+            border: none;
+            /* Remove all borders */
+            white-space: normal;
+            /* Allow wrapping within cells */
+            overflow: visible;
+            /* Show all content within cells */
+            text-overflow: clip;
+            /* Prevent ellipsis */
+        }
+
+        .table thead th {
+            background-color: white;
+            /* White background for headers */
+            color: #A0AEC0;
+            /* Gray text for headers */
+            padding-top: 3rem;
+            /* Increased header background height */
+            padding-bottom: 1rem;
+            /* Increased header background height */
+
+        }
+
+        .table tbody {
+            background-color: white;
+            /* White background for content */
+            color: #2B3674;
+            /* Dark blue text for content */
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+

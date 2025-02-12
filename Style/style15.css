@@ -1,0 +1,266 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+.page-title {
+    position: absolute;
+    top: 70px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+.breadcrumb {
+    position: absolute;
+    top: 30px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+.custom-circle-box {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 7px;
+    border: -10px solid #dee2e6;
+    text-align: center;
+    background-color: white;
+    margin-top: 120px;
+    transform: translateX(-20px);
+    height: 50px;
+    margin-left: 10px; /* تقليل المسافة الجانبية */
+}
+
+  .custom-circle-box span {
+      margin: 0 6px;
+      white-space: nowrap; /* Prevent text from wrapping */
+       color: #91024d; /* لون زهري */
+      
+
+  }
+
+
+.small-text {
+  font-size: 12px !important; /* تصغير حجم النص */
+  text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+
+.input-icon {
+  position: absolute;
+  left: 10px; /* ضبط الموقع من اليسار */
+  top: 50%;
+  transform: translateY(-50%); /* ضبط تموضع الأيقونة في المنتصف */
+  width: 10px; /* حجم الأيقونة */
+  height: 10px;
+  pointer-events: none; /* منع التفاعل مع الأيقونة */
+}
+
+
+  .custom-circle-box .dropdown-toggle {
+      border: none;
+      background-color: white;
+      color: #213c57;
+      padding: 0;
+     margin-left:5px;
+     
+  }
+  .content-box {
+  
+    background-color: white; /* خلفية بيضاء */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    margin-top:10px; /* Adjust this value as needed to move it down */
+    
+}
+
+.custom-heading {
+    color: #AB0362; /* لون زهري */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* مسافة بين الأيقونة والنص */
+    margin-top: 10px;
+     
+}
+.custom-heading img {
+    width: 24px;
+    height: 24px;
+}
+.custom-list {
+    color: navy; /* لون كحلي */
+    padding-right: 10px; /* إزاحة لليمين */
+    font-size: 15px;
+    margin-top: -10px;
+}
+.custom-list li {
+    margin-bottom: 1px; /* تصغير المسافة بين العناصر */
+    position: relative;
+    padding-right: 20px; /* مسافة للنقطة */
+}
+.custom-list li::before {
+    content: "●"; /* نقطة على يمين كل عنصر */
+    position: absolute;
+    right: 0;
+    color: navy;
+    
+}
+.sub-title {
+    color: #2B3674 !important; /* لون النص أسود */
+    font-weight: bold; /* جعل الخط غامقًا */
+
+    position: relative;
+    top: 120px;  /* تحريك العنوان للأسفل */
+    right: 20px;   /* تحريك العنوان لليمين */
+    text-align: right;  /* محاذاة العنوان لليمين */
+    font-size: 20px;
+}
+
+.text-secondary {
+    color: #003366;
+    font-size: 0.9rem;
+    margin-top: 6px;
+    position: relative;
+    z-index: 10; /* تأكيد أن النص يظهر فوق العناصر الأخرى */
+    transform: translateX(-10px); /* إزاحة النص بمقدار 10 بكسل إلى اليسار */
+}
+
+p::after {
+    content: "•"; /* إضافة نقطة */
+    position: absolute;
+    right: -5px; /* وضع النقطة على الجهة اليمنى */
+    top: 60%; /* محاذاة النقطة عموديًا في المنتصف */
+    transform: translateY(-50%); /* تحريك النقطة قليلاً لجعلها في المنتصف تمامًا */
+    color: #2B3674; /* لون النقطة (يظل كما هو) */
+    margin-left: 10px; /* إضافة مسافة بين النص والنقطة */
+}
+
+.custom-class1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     margin-top: -20px;
+    background-color: #AB03620F;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-class1 div {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.table-container {
+    position: relative;
+    margin-top: 80px; /* زيادة الهامش العلوي لتحريك الجدول للأسفل */
+}
+
+
+.fixed-content {
+    position: relative; /* أو position: absolute; حسب الحاجة */
+    margin-top:-10px; /* مسافة بين الجدول وهذا القسم الثابت */
+}
+
+
+
+.table-container thead {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 8px;
+   
+    border-radius: 20px;
+    overflow: hidden;
+    height: 70px; /* تحديد ارتفاع رأس الجدول */
+}
+
+.table-container th {
+    color: #A0AEC0;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.table-container table {
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.table-container tbody {
+    background-color: white; 
+}
+.table-container td,
+.table-container th {
+    border: none;
+    text-align: center; /* توسيط النص أفقيًا */
+}
+.table-container td{
+    color: #2B3674;
+}
+.custom2-button {
+    background-color: #AB0362 !important;
+    border-color: #AB0362 !important;
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    position: relative !important;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 110px; /* زيادة المسافة للأسفل */
+    transform: translateX(-280px); /* تحريك العنصر إلى اليسار بمقدار 40px */
+
+
+}
+
+.custom2-button:hover {
+    background-color: #91024d !important;
+    border-color: #91024d !important;
+}
+
+.custom2-button img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.pink-button {
+    background-color: #91024d  !important; /* زهري فاتح */
+    border-color: #91024d  !important;
+}
+
+
+.small-button {
+    font-size: 0.8rem; /* تصغير حجم الخط */
+    padding: 0.25rem 0.5rem; /* تقليل المسافات الداخلية */
+}
+.custom-circle-box h5 {
+    transform: translateY(5px); /* يمكنك تغيير هذه القيمة حسب الحاجة */
+    color: #2B3674; 
+}
+  
+ .pink-text {
+color: #AB0362; /* أو أي درجة من الزهري تفضلها */
+}
+.input-wrapper {
+    position: relative; /* مهم عشان تحديد مكان الصورة بالنسبة للحاوية */
+}

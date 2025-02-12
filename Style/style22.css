@@ -1,0 +1,133 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: scroll; /* السماح بالتمرير العمودي */
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.page-title {
+    position: absolute;
+    top: 70px;
+    right: 290px;
+    font-size: 26px; /* تصغير الخط قليلاً */
+    font-weight: bold;
+    color: #AB0362;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 30px;
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+.sub-title {
+    color: #2B3674 !important;
+    font-weight: bold;
+    position: relative;
+    top: 120px;
+    right: 20px;
+    text-align: right;
+    font-size: 18px; /* تصغير الخط قليلاً */
+}
+
+.message-container {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 30px; /* تقليل المسافة بين المستطيلات */
+    padding: 21px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 150px; /* إنزال المستطيلات للأسفل */
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.message-header strong {
+    color: #2B3674;
+    font-size: 14px;
+}
+
+.message-details {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 4px;
+}
+
+.message-content {
+    font-size: 14px;
+    color: #343a40;
+    line-height: 1.4;
+}
+
+.message-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5px; /* تقليل المسافة العلوية */
+}
+
+.message-options a {
+    text-decoration: none;
+    color: #AB0362;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* صندوق الخيارات لإرسال الرسائل */
+.options-container {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 20px; /* تقليل المسافة بين المستطيلات */
+    padding: 21px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* تغيير إلى center لإلغاء التباعد */
+    align-items: center;
+    position: relative;
+    top: 110px; /* إنزال المستطيلات للأسفل */
+}
+
+.options-container a {
+    text-decoration: none;
+    color: #6c757d;  /* اللون الرمادي الأصلي */
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5; /* تحديد ارتفاع الخط (line-height) */
+    margin: 0 10px; /* إضافة هامش صغير بين الروابط */
+    transition: color 0.3s ease-in-out; /* إضافة تأثير الانتقال */
+}
+
+.options-container a:hover,
+.options-container a:focus {
+    color: #AB0362; /* اللون الزهري عند التحويم أو التحديد */
+    text-decoration: underline;  /* إضافة خط سفلي */
+    text-decoration-color: #AB0362;  /* لون الخط السفلي زهري */
+} 
+
+main {
+    margin-top: 100px; /* زيادة الهامش لإنزال المحتوى لأسفل */
+}

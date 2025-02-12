@@ -1,0 +1,253 @@
+body {
+    overflow-y: hidden; /* منع التمرير العمودي */
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحشو */
+    font-family: 'Cairo', sans-serif !important;
+
+
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: -10;
+    margin-right: 250px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.navbar .container-fluid {
+    direction: rtl;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+}
+
+.sidebar {
+    height: 800px;; /* تأكد من أن القائمة تمتد على كامل ارتفاع الصفحة */
+    background-color: white;
+    padding-top: 0;
+    border-left: 1px solid white;
+    width: 270px;
+    top: -10; /* رفع القائمة إلى أعلى الصفحة */
+    left: 0;
+    position: fixed; /* تحديد الموقع ليبقى ثابتًا في أعلى الصفحة */
+    z-index: 999;
+}
+
+
+.sidebar .nav-link {
+    color: #718096;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
+}
+
+.sidebar .nav-link.active {
+    background-color: #AB0362;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 8px 20px;
+    white-space: nowrap;
+        border-radius: 9.13px;
+
+}
+
+.nav .menu-item {
+    font-size: 14px;
+    text-align: right;
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav .menu-item::after {
+    content: '●';
+    font-size: 8px;
+    color: #000;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-item {
+    position: relative;
+    right: -20px;
+}
+
+.nav .menu-item:hover {
+    color: #AB0362;
+}
+
+.nav .menu-item:hover::after {
+    color: #AB0362;
+}
+
+.nav .menu-item.active {
+    color: #AB0362;
+}
+
+.nav .menu-item.active::after {
+    color: #AB0362;
+}
+
+.nav-link:hover {
+    background-color: #AB0362;
+    color: white;
+    padding: 8px 16px;
+}
+
+.nav-link.active {
+    background-color: #AB0362;
+    color: white;
+    padding: 8px 16px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    background-color: #AB0362;
+    color: white;
+    padding: 8px 16px;
+}
+
+#menuModesDropdown {
+    direction: rtl;
+}
+
+#menuModesDropdown .menu-item {
+    text-align: right;
+    padding-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#menuModesDropdown .menu-item::after {
+    content: '●';
+    font-size: 8px;
+    color: #000;
+    margin-left: 10px;
+}
+
+.fas.fa-chevron-down {
+    float: left;
+    margin-right: 15px;
+}
+
+#menuModesDropdown .nav-link i {
+    float: left;
+    margin-right: 10px;
+}
+
+.custom-navbar-icon {
+    position: absolute;
+    right: 250px;
+    bottom: -60px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link {
+    padding-left: 5px;
+}
+
+#academicDropdown ul.nav.flex-column li.nav-item a.nav-link {
+    white-space: nowrap;
+    display: block;
+    max-width: 200px;
+}
+
+#academicDropdown ul.nav.flex-column li.nav-item a.nav-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    max-width: 200px;
+    position: relative;
+    padding-right: 20px;
+    color: #000;
+    align-items: center;
+}
+
+#academicDropdown ul.nav.flex-column li.nav-item a.nav-link::after {
+    content: '●';
+    font-size: 8px;
+    color: #000;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#academicDropdown ul.nav.flex-column li.nav-item a.nav-link:focus,
+#academicDropdown ul.nav.flex-column li.nav-item a.nav-link:active {
+    color: #AB0362;
+}
+
+#academicDropdown ul.nav.flex-column li.nav-item a.nav-link:focus::after,
+#academicDropdown ul.nav.flex-column li.nav-item a.nav-link:active::after {
+    color: #AB0362;
+}
+
+#menuModesDropdown {
+    padding-left: 55px;
+}
+
+
+.navbar .container-fluid {
+    padding-right: 15px;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar .d-flex {
+    margin-right: auto;
+}
+
+
+
+.content {
+    margin-top: 60px;
+    margin-right: 250px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+

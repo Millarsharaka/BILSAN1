@@ -1,0 +1,147 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.page-title {
+    position: absolute;
+    top: 70px;
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 30px;
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+.sub-title {
+    color: #2B3674 !important;
+    font-weight: bold;
+    position: relative;
+    top: 120px;
+    right: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.sub-title2 {
+    color: #2B3674 !important;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    right: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.custom2-button {
+    background-color: #AB0362 !important;
+    border-color: #AB0362 !important;
+    margin-top: 130px !important;
+    font-size: 1rem !important;
+    padding: 0.4rem 1rem !important;
+    position: relative !important;
+    right: 1200px !important;
+    margin-right: 0 !important;
+    top: -50px;
+}
+
+.custom2-button:hover {
+    background-color: #AB0362 !important;
+    border-color: #AB0362 !important;
+}
+
+.custom3-button {
+    background-color: #AB0362 !important;
+    border-color: #AB0362 !important;
+    font-size: 1rem !important;
+    padding: 0.4rem 1rem !important;
+    position: relative !important;
+    right: 1200px !important;
+    margin-right: 0 !important;
+    top: 20px;
+}
+
+.custom3-button:hover {
+    background-color: #AB0362 !important;
+    border-color: #AB0362 !important;
+}
+
+/* أنماط الجدولين مع تقليل العرض وإضافة حواف دائرية */
+.academic-details-table,
+.academic-moves-table {
+    width: 95% !important; /* تقليل عرض الجدول */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    margin-right: auto; /* توسيط الجدول */
+    margin-left: auto; /* توسيط الجدول */
+    border-radius: 10px; /* إضافة حواف دائرية */
+    overflow: hidden; /* لضمان ظهور الحواف الدائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
+
+.academic-details-table th,
+.academic-details-table td,
+.academic-moves-table th,
+.academic-moves-table td {
+    padding: 12px;
+    text-align: right;
+}
+
+.academic-details-table th,
+.academic-moves-table th {
+    background-color: white;
+    color: #A0AEC0;
+}
+
+.academic-moves-table {
+    margin-top: 70px;
+    color: #2B3674;
+    height: 120px;
+}
+
+/* رسالة لا توجد بيانات */
+.no-data-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #d0006f;
+    right: 10px;
+    font-weight: bold;
+}
+
+
+.no-data-container img {
+    width: 70px;
+    margin-bottom: 10px;
+    right: 10px;
+}

@@ -1,0 +1,70 @@
+body {
+    background-color: #F4F7FE !important;
+    overflow-y: hidden; /* إخفاء شريط التمرير العمودي */
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif !important;
+
+}
+
+.navbar {
+    border: none !important;
+    box-shadow: none !important;
+    position: fixed;
+    top: 0;
+    width: 30%;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 60px;
+    margin-right: 250px; /* لضبط المسافة من اليمين */
+}
+
+.navbar .container-fluid {
+    direction: ltr;
+    border-radius: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: auto; /* دفع العناصر إلى أقصى اليسار */
+    white-space: nowrap;
+}
+
+.navbar .input-group-append {
+    margin-left: -1px; /* تخلص من أي مسافة غير مرغوبة */
+    margin-right: 0;
+}
+
+.navbar .input-group-text {
+    border-radius: 49px !important;
+    background-color: transparent !important;
+    border: none !important;
+    width: 40px; /* زيادة عرض الزر */
+    margin-right: -30px; /* إزاحة الزر لليمين */
+}
+
+.navbar .form-control {
+    border-radius: 49px !important;
+    background-color: transparent !important;
+    border: 1px solid #ced4da !important;
+    width: 470px; /* زيادة عرض مربع البحث */
+    max-width: 100%; /* التأكد من أنه لا يتجاوز عرض الشاشة */
+    padding-right: 10px; /* إضافة مسافة داخلية لليمين */
+}
+.navbar .d-flex.align-items-center {
+    margin-right: -6%; /* استبدل 10% بالقيمة التي تناسبك */
+}
+.ml-2 {
+    margin-left: 30px; /* غيّر القيمة حسب الحاجة */
+}

@@ -1,0 +1,216 @@
+body {
+    overflow-x: hidden !important; /* إخفاء التمرير الأفقي */
+    overflow-y: hidden !important; /* إخفاء التمرير العمودي على الصفحة */
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+iframe {
+    border: none;
+    overflow: hidden;
+}
+
+
+h2.font-weight-bold {
+    color: #AB0362; /* اللون الزهري */
+    top: -20px;
+}
+
+.font-weight-bold6 {
+    color: #000000; /* تعيين اللون الأسود */
+    margin-bottom: 16px; /* مساحة أسفل العنوان */
+    position: absolute; /* وضع العنصر بشكل مطلق */
+    top: 60px;         /* تحديد المسافة من أعلى الصفحة */
+    left: 20px;         /* تحديد المسافة من يسار الصفحة */
+    z-index: 1003;      /* للتأكد من أن العنوان يظهر فوق العناصر الأخرى */
+   direction: rtl; /* لجعل النص يبدأ من اليمين */
+     font-size: 20px;
+     margin-top: 110px;
+     left: 290px;       
+     font-family: DM Sans;
+     font-size: 20px;
+}
+nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item a {
+    color: #888888;
+    margin-top: 20px;
+}
+
+nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item {
+    margin-top: -85px; /* سيؤثر هذا على موضع عنصر الـ li وما يحتويه */
+}
+.nav-link[data-bs-toggle="collapse"][data-bs-target="#academicDropdown"] {
+    display: inline-block; /* Make it behave like a block element */
+    padding: 8px 16px; /* Add padding for spacing */
+    background-color: #AB0362; /* Pink background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show a pointer cursor */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+    border-radius: 50px; /* Add fully rounded corners */
+    width: 150px;
+}
+
+.nav-link[data-bs-toggle="collapse"][data-bs-target="#academicDropdown"]:hover {
+    background-color: #AB0362; /* Darker pink on hover */
+}
+
+/* ... باقي الـ CSS الخاص بك ... */
+.sidebar img.logo {
+    width: 120px; /* تم تصغير عرض الصورة إلى 120px */
+    display: block; /* جعل الصورة على سطر منفصل */
+    margin-left: auto; /* توسيط الصورة أفقيًا إذا لزم الأمر */
+    margin-right: auto; /* توسيط الصورة أفقيًا إذا لزم الأمر */
+    margin-bottom: 20px; /* إضافة مسافة أسفل الصورة (اختياري) */
+}
+
+.sidebar-icon {
+    position: absolute;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+}
+
+.action-cell {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.action-cell .btn.btn-outline-secondary {
+    width: 70px;
+    padding: 4px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* هذه الخاصية مهمة لتوسيط الصورة والنص */
+    border: none; /* ازالة الاطار */
+}
+
+.action-cell .btn.btn-outline-secondary img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    margin-left: 5px; /* إضافة هامش أيسر بين النص والصورة */
+}
+.staff-forms-container {
+    width: 100%;
+    height: 500px;
+    max-width: 1400px; /* زيادة الحد الأقصى للعرض */
+    margin: 50px auto;
+    padding: 80px;
+    background: white;
+    border-radius: 30px;
+    display: flex; /* إضافة flexbox */
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+    align-items: center; /* توسيط العناصر أفقياً */
+  
+}
+.form-button {
+    width: 80%; /* تقليل عرض الأزرار */
+    max-width: 400px; /* تحديد حد أقصى لعرض الأزرار */
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.form-button:not(:first-child) {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9.13px;
+    border-color: #AB0362; /* استخدام رمز HEX للون الزهري */
+}
+.alert-secondary {
+    background-color: #AB03621A !important;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    width: 100%; /* جعل العرض يتكيف مع العنصر الأب */
+    max-width: none; /* إلغاء القيود المفروضة على العرض */
+    font-size: 0.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+ 
+ .alert-secondary span {
+    margin-right: 30px; /* تحريك النص إلى اليمين */
+}
+.shift-right {
+    margin-left: auto; /* يدفع النص إلى أقصى اليمين */
+    padding-left: 20px; /* مسافة إضافية لزيادة الإزاحة */
+    display: block; /* يضمن أن النص يأخذ سطرًا منفصلًا */
+}
+
+.form-button {
+    background-color: #AB0362; /* لون زهري داكن */
+    border-color: #AB0362;
+     
+  }
+
+  .alert-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #FFC0CB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alert-icon img {
+    width: 10px;
+    height: 10px;
+}
+.alert-container {
+    position: relative;
+    display: inline-block;
+}
+
+.alert-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #FFC0CB;
+    border-radius: 50%;
+    float: left;
+}
+
+.bi-chat-left-dots {
+    position: absolute;  /* تحديد الموضع بشكل مطلق */
+    top: 50%;         /* توسيط عمودي */
+    transform: translateY(-50%); /* لتحريكها بالمنتصف بالضبط */
+    right: calc(105% + -10px); /* تحريكها إلى يسار العنصر */
+    background-color: #AB0362; /* لون الخلفية الزهري */
+    border-radius: 50%; /* جعل الخلفية دائرية */
+    width: 24px; /* تحديد عرض الـ SVG */
+    height: 24px; /* تحديد ارتفاع الـ SVG */
+    display: flex; /* لعرض الأيقونة داخل الدائرة */
+    align-items: center;  /* توسيط أفقي للأيقونة داخل الدائرة */
+    justify-content: center; /* توسيط عمودي للأيقونة داخل الدائرة */
+    padding: 4px;
+}
+.bi-chat-left-dots path {
+  fill: white; /* تحديد لون الأيقونة */
+}
+.add-new-task .btn {
+    background-color: #AB0362;
+    color: white;
+    font-size: 0.875rem;
+    padding: 0.3rem 0.6rem;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: none;
+}
+.add-new-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* توسيط أفقي للعناصر الأبناء */
+    text-align: center;
+    margin-top: 20px;
+}

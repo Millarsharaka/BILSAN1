@@ -1,0 +1,272 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+.page-title {
+    position: absolute;
+    top: 70px; /* إرجاع الارتفاع الأصلي */
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+.breadcrumb {
+    position: absolute;
+    top: 30px; /* إرجاع الارتفاع الأصلي */
+    right: 20px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.section-title-above {
+    font-size: 1.3em;
+    color: #001f3f; /* تغيير اللون إلى الكحلي */
+    margin-bottom: 20px;
+    text-align: right;
+    position: relative; /* تمكين التحريك النسبي */
+    top: 10px; /* تحريك العنوان للأسفل (عدّل القيمة حسب الحاجة) */
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+.container {
+   position: relative; /* نجعل الحاوية الرئيسية ذات موقع نسبي */
+    width: 80%; /* تعديل العرض */
+    margin: 0 auto; /* توسيط الحاوية */
+    padding-top: 20px; /* إضافة تباعد علوي */
+}
+.static-text {
+    display: block; /* جعل العنصر يظهر كعنصر بلوك */
+    padding: 8px 0; /* إزالة التباعد الجانبي للحفاظ على التناسق */
+    background: none; /* إزالة الخلفية */
+    border: none; /* إزالة أي حدود */
+    color: #333; /* لون النص */
+    text-align: right; /* توسيط النص */
+    font-size: 0.9em;
+}
+
+
+.info-box {
+   position: relative; /* نجعله ذو موقع مطلق */
+    top: 90px;    /* عدّل هذه القيم حسب الحاجة */
+    right: 0;    /* عدّل هذه القيم حسب الحاجة */
+    background-color: white; /* لون الخلفية */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.info-box h4 {
+    font-size: 1.2em;
+    color: #AB0362;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* إزالة التوزيع بالتساوي */
+    direction: rtl; /* عكس اتجاه العناصر */
+}
+
+.info-box h4 img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px; /* إضافة مساحة صغيرة بين الصورة والنص */
+}
+.info-box ul {
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+.info-box li {
+    list-style-type: disc;
+    font-size: 0.9em;
+    color: #2B3674;
+    margin-bottom: 5px;
+}
+
+/* لتحديد مكان الأزرار */
+.action-buttons {
+   position: relative; /* نجعله ذو موقع مطلق */
+    top: 0;    /* عدّل هذه القيم حسب الحاجة */
+    right: 0;    /* عدّل هذه القيم حسب الحاجة */
+    text-align: left; /* محاذاة الأزرار إلى اليسار */
+}
+.action-buttons button {
+    position: relative;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    top: 70px; /* هذه القيمة تحدد المسافة التي سينزلها الأزرار داخل الحاوية */
+}
+
+.confirm-button {
+   
+    background-color: transparent; /* اجعل الخلفية شفافة */
+    color: #AB0362;  /*نفس لون الزر الاخر*/
+    border: 1px solid #AB0362 !important; /* حواف زهرية */
+}
+
+.save-button {
+    background-color: #AB0362;
+    color: white;
+    border: none; /*إزالة الحدود عند التأكيد*/
+}
+
+
+.search-button {
+    border-radius: 50px !important;
+    border: none !important;
+    background-color: white;
+    color: #AB0362;
+    padding: 3px 6px;
+    align-items: center;
+    direction: rtl;
+    margin-right: 10px;
+    position: relative;
+    top: 120px; /* هذه القيمة تحدد المسافة التي سينزلها الأزرار داخل الحاوية */
+}
+
+.search-button input {
+    border: none; /* إزالة الإطار */
+    background-color: #f0f0f0; /* لون الخلفية رمادي فاتح */
+    border-radius: 20px; /* جعل الحواف دائرية */
+    padding: 8px 10px; /* تعديل التباعد الداخلي */
+    font-size: 0.9em; /* تعديل حجم النص */
+    outline: none; /* إزالة التأثير عند التحديد */
+    color: #6c757d; /* لون النص رمادي */
+    width: 120px; /* يمكنك تعديل العرض حسب الحاجة */
+    text-align: center; /* توسيط النص داخل الإدخال */
+}
+
+.search-button span {
+    color: #AB0362; /* لون النص زهري */
+    font-size: 0.8em;
+}
+
+.action-buttons button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.action-buttons button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.form-section {
+    position: relative; /* يمكنك إزالة هذا إذا لم يكن ضروريًا */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 70px; /* زيادة هذه القيمة ستنزل العنصر للأسفل */
+    height: 405px;
+}
+/* تنسيقات رأس القسم */
+.form-section .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-section .section-title {
+    color: #AB0362;
+    font-size: 1.2em;
+}
+
+.form-section .tabs {
+    display: flex;
+}
+
+.form-section .tabs a {
+    color: #6c757d;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-left: 5px;
+   
+}
+.form-group {
+    margin-right: 0px; /* تحريك كل عنصر إلى اليمين */
+}
+
+.form-section .tabs a.active {
+  
+    color: #AB0362;
+}
+
+/* تنسيقات محتوى النموذج */
+.form-section .form-content {
+    margin-top: 30px;
+}
+
+.form-section .form-group {
+    margin-bottom: 10px; /* تقليل المسافة بين العناصر */
+}
+
+
+.form-section .sub-title {
+    font-size: 1.1em;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.form-section .form-label {
+    font-size: 0.9em;
+    color: #2B3674;
+    margin-bottom: 5px;
+}
+
+.form-section .form-control {
+    border-radius: 5px;
+    border: 1px solid #A0AEC0;
+    padding: 5px;
+    font-size: 0.85em;
+    width: 90px;
+    color: #495057;
+
+}
+
+.form-section .form-control:focus {
+    outline: none;
+    border-color: #AB0362;
+    box-shadow: 0 0 0 0.2rem rgba(171, 3, 98, 0.25);
+}
+
+.form-section .radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-section .radio-group input[type="radio"] {
+    margin-left: 5px;
+}
+
+.form-section .radio-group label {
+    margin-right: 5px;
+}
+
+/*تعديلات لازرار الراديو*/
+input[type="radio"] {
+  accent-color: #AB0362;
+}

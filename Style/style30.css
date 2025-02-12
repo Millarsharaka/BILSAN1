@@ -1,0 +1,149 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+.page-title {
+    position: absolute;
+    top: 70px; /* إرجاع الارتفاع الأصلي */
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+.breadcrumb {
+    position: absolute;
+    top: 30px; /* إرجاع الارتفاع الأصلي */
+    right: 20px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.section-title-above {
+    font-size: 1.3em;
+    color: #001f3f; /* تغيير اللون إلى الكحلي */
+    margin-bottom: 20px;
+    text-align: right;
+    position: relative; /* تمكين التحريك النسبي */
+    top: 10px; /* تحريك العنوان للأسفل (عدّل القيمة حسب الحاجة) */
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+.container {
+   position: relative; /* نجعل الحاوية الرئيسية ذات موقع نسبي */
+    width: 80%; /* تعديل العرض */
+    margin: 0 auto; /* توسيط الحاوية */
+    padding-top: 20px; /* إضافة تباعد علوي */
+}
+.static-text {
+    display: block; /* جعل العنصر يظهر كعنصر بلوك */
+    padding: 8px 0; /* إزالة التباعد الجانبي للحفاظ على التناسق */
+    background: none; /* إزالة الخلفية */
+    border: none; /* إزالة أي حدود */
+    color: #333; /* لون النص */
+    text-align: right; /* توسيط النص */
+    font-size: 0.9em;
+}
+
+
+.info-box {
+   position: relative; /* نجعله ذو موقع مطلق */
+    top: 100px;    /* عدّل هذه القيم حسب الحاجة */
+    right: 0;    /* عدّل هذه القيم حسب الحاجة */
+    background-color: white; /* لون الخلفية */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.info-box h4 {
+    font-size: 1.2em;
+    color: #AB0362;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* إزالة التوزيع بالتساوي */
+    direction: rtl; /* عكس اتجاه العناصر */
+}
+
+.info-box h4 img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px; /* إضافة مساحة صغيرة بين الصورة والنص */
+}
+.info-box ul {
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+.info-box li {
+    list-style-type: disc;
+    font-size: 0.9em;
+    color: #2B3674;
+    margin-bottom: 5px;
+}
+
+.academic-details-table {
+    width: 100% !important;
+    border-collapse: collapse;
+ 
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 120px !important; /* إضافة المسافة من الأعلى */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.academic-details-table th,
+.academic-details-table td,
+.academic-moves-table th,
+.academic-moves-table td {
+    padding: 12px;
+    text-align: right;
+}
+
+.academic-details-table th,
+.academic-moves-table th {
+    background-color: white;
+    color: #A0AEC0;
+}
+
+
+
+.no-data-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #d0006f;
+    font-weight: bold;
+    margin-left: -500px; /* تحريك المحتوى لليسار */
+}
+
+
+
+.academic-details-table th, .academic-details-table td {
+    text-align: center; /* لجعل النصوص في العناوين والخلية في الوسط */
+    padding: 5px; /* إضافة مسافة بين النصوص وحدود الخلايا */
+}

@@ -1,0 +1,83 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.page-title {
+    position: absolute;
+    top: 70px;
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 30px;
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+.sub-title {
+    color: #2B3674 !important;
+    font-weight: bold;
+    position: relative;
+    top: 120px;
+    right: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+.pink-text-box {
+    background-color: white;
+    border-radius: 10px; /* حواف دائرية */
+    padding: 35px;
+    text-align: center; /* توسيط النص */
+    color: #AB0362; /* لون زهري للنص */
+    margin-top: 190px; /* مسافة بين العنوان والمستطيل */
+}
+       /* تصميم المستطيل */
+       .pink-text-box {
+        background-color: white;
+        border-radius: 10px; /* حواف دائرية */
+        padding: 35px;
+        color: #AB0362; /* لون زهري للنص */
+        margin-top: 160px; /* مسافة بين العنوان والمستطيل */
+        display: flex; /* لترتيب النص والصورة جنبًا إلى جنب */
+        align-items: center; /* توسيط عمودي للعناصر */
+        justify-content: center; /* توزيع العناصر بشكل متساوي */
+        gap: 10px; /* مسافة بين النص والصورة */
+        font-weight: bold;
+
+    }
+
+    .pink-text-box p {
+        font-weight: bold; /* نص غامق */
+        margin: 0; /* إزالة الهوامش الافتراضية للنص */
+    }
+
+    .pink-text-box img {
+        width: 30px; /* تحديد عرض الصورة (يمكنك تغيير هذه القيمة) */
+        height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    }

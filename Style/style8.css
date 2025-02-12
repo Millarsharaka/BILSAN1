@@ -1,0 +1,257 @@
+body {
+    background-color: #F3F6FD !important;
+    font-family: 'Cairo', sans-serif !important;
+
+}
+
+h2.font-weight-bold {
+    color: #AB0362;
+    top: -20px;}
+
+nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item a {
+    color: #888888;
+}
+
+nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item {
+    margin-top: -85px;
+}
+
+
+
+       /* تخصيص الأنماط للعناصر الجديدة */
+       .profile-header {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .profile-summary {
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 2;
+        top: -80px; /* تعديل هنا لرفع العنصر */
+        
+    }
+    .profile-summary img {
+
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .profile-summary p {
+        margin-bottom: 0;
+        font-size: 0.9rem; /* تقليل حجم الخط */
+        color: #718096; /* لون رمادي */
+    }
+
+    .profile-info {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+    }
+.profilecard1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.profile-card {
+    background-color: white;
+   height: 50px;
+    padding: 10px;
+ 
+}
+
+
+
+.profile-info-block {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 20px;
+    margin-top: -80px;
+    width:730px;
+    height: 290px;
+    text-align: right;
+    float: right;
+    direction: ltr;
+}
+ .profile-info-block p{
+    font-size: 11px; /* Reduced font size */
+   line-height: 1.4;/* added line-height for better reading experience */
+   text-align: left;
+   
+
+}
+.profile-info-block b {
+    font-weight: 600; /* to make the bold text more visible */
+    text-align: left;
+}
+
+
+
+
+
+.platform-settings-block {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 20px; /* Add some margin on left and right */
+    margin-top: -80px;
+   width:480px;
+   height: 290px;
+
+   text-align: left;
+}
+.files-block {
+    height: 185px; /* Reduced height */
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px; /* Reduced padding */
+    margin: 20px 20px;
+    margin-top: -10px;
+    
+}
+
+.file-card {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: -0;
+    width: 300px;
+    height: 100px;
+    position: relative; /* Add position relative */
+}
+.file-card h5 {
+    font-size: 10px;
+    margin-left: 120px;
+    direction: ltr;
+        margin-top: -90px; /* Lift the heading higher */
+}
+
+.file-card p.text-muted.small {
+    font-size: 11px;
+    text-align: left;
+    margin-left: 90px;
+    direction: ltr;
+}
+
+.file-card img {
+    width: 40%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px; /* Add some margin to the bottom */
+}
+
+.file-card .btn {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 90px;
+    color: #AB0362;
+    background-color: white;
+    border: 1px solid #AB0362;
+    border-radius: 4px;
+    margin-left: 120px;
+    margin-top: -3px; /* Lift the heading higher */
+
+}
+
+.add-file-card {
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 160px;
+    text-align: center;
+}
+
+.add-file-card .btn {
+    margin-top: 5px;
+    border: none;
+    background-color: white;
+    color: #718096;
+    align-items: center;
+    font-size: 14px;
+    
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #AB0362;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+input:checked + .slider:before {
+    transform: translateX(20px);
+    }
+    .file-card p.text-muted.small {
+    font-size: 11px;
+    margin-left: 120px;
+    direction: ltr;
+    } 
+    h4.mb-3.fw-bold {
+        font-size: 1.2rem; /* Reduced font size */
+        margin-bottom: 0.2rem !important; /* Reduced margin-bottom, !important to override existing styles if needed */
+        font-weight: bold;
+        margin-top: 0; /* Remove or reduce margin-top to lift it */
+    }
+    
+    p.text-muted {
+        font-size: 0.9rem; /* Reduced font size */
+        margin-bottom: 0.1rem !important; /* Reduced margin-bottom, !important to override existing styles if needed */
+        margin-top: 0; /* Remove or reduce margin-top to lift it */
+    }

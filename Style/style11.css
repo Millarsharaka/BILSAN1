@@ -1,0 +1,89 @@
+body {
+    overflow-x: hidden !important; /* إخفاء التمرير الأفقي */
+    overflow-y: hidden !important; /* إخفاء التمرير العمودي على الصفحة */
+    background-color: #062d8881 !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+iframe {
+    border: none;
+    overflow: hidden;
+}
+
+h2.font-weight-bold {
+    color: #AB0362; /* اللون الزهري */
+    margin-top: 10px;
+}
+
+h2.font-weight-bold2 {
+    color: #000000; /* اللون الزهري */
+    font-size: 20px;
+}
+
+nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item a {
+    color: #888888;
+    margin-top: 20px;
+}
+
+nav[aria-label="breadcrumb"] ol.breadcrumb li.breadcrumb-item {
+    margin-top: -90px; /* سيؤثر هذا على موضع عنصر الـ li وما يحتويه */
+}
+
+
+
+/* ... باقي الـ CSS الخاص بك ... */
+
+/* ... باقي الـ CSS الخاص بك ... */
+.message-container {
+  
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px; /* تصغير حجم الخط */
+ 
+}
+.message-header {
+    font-weight: bold;
+}
+.message-details {
+    margin-left: 10px;
+}
+.message-content {
+    margin-top: 10px;
+}
+.nav-tabs .nav-link.active{
+    background-color: #fff;
+    border-bottom: 2px solid #C13075 !important;
+    border-radius: 0;
+    color: #C13075 !important;
+}
+ .nav-tabs .nav-link {
+    color: #000;
+    border-radius: 0;
+   
+}
+
+.nav-tabs-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex; /* لجعل الحاوية Flex container */
+    justify-content: center; /* لتوسيط العناصر أفقياً */
+    align-items: center; /* لتوسيط العناصر رأسياً (اختياري) */
+    width: 100%;
+    margin-top: -50px;
+    
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-tabs .nav-item {
+    margin: 0 10px; /* مسافة بين العناصر */
+}

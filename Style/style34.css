@@ -1,0 +1,126 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif;
+}
+.page-title {
+    position: absolute;
+    top: 70px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+.breadcrumb {
+    position: absolute;
+    top: 30px; /* إرجاع الارتفاع الأصلي */
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+
+
+
+.sub-title {
+    color: #2B3674 !important; /* لون النص أسود */
+    font-weight: bold; /* جعل الخط غامقًا */
+
+    position: relative;
+    top: 120px;  /* تحريك العنوان للأسفل */
+    right: 20px;   /* تحريك العنوان لليمين */
+    text-align: right;  /* محاذاة العنوان لليمين */
+    font-size: 20px;
+}
+
+.text-secondary {
+    color: #003366;
+    font-size: 0.9rem;
+    margin-top: 6px;
+    position: relative;
+    z-index: 10; /* تأكيد أن النص يظهر فوق العناصر الأخرى */
+    transform: translateX(-10px); /* إزاحة النص بمقدار 10 بكسل إلى اليسار */
+}
+
+p::after {
+    content: "•"; /* إضافة نقطة */
+    position: absolute;
+    right: -5px; /* وضع النقطة على الجهة اليمنى */
+    top: 60%; /* محاذاة النقطة عموديًا في المنتصف */
+    transform: translateY(-50%); /* تحريك النقطة قليلاً لجعلها في المنتصف تمامًا */
+    color: #2B3674; /* لون النقطة (يظل كما هو) */
+    margin-left: 10px; /* إضافة مسافة بين النص والنقطة */
+}
+
+.custom-class1 {
+    display: flex;
+    justify-content: center; /* محاذاة العناصر أفقيًا في المنتصف */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    margin-top: 200px;
+    background-color: #AB03620F;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center; /* محاذاة النص داخل العنصر */
+}
+
+.custom-class1 div {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.custom-table {
+    border-collapse: collapse;
+    width: 98% !important; /* تقليل العرض إلى 90% من عرض الحاوية الأصلية */
+    margin: 0 auto; /* جعل الجدول في المنتصف أفقيًا */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* لتفعيل تأثير التحريك */
+    top: 190px; /* تحريك الجدول للأسفل بمقدار 40px */
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 16px;
+    text-align: center;
+    border: none;
+    background-color: white; /* خلفية بيضاء لكل الخلايا */
+
+}
+
+.custom-table th {
+    background-color: white;
+    font-weight: normal;
+    color: #A0AEC0;
+}
+
+.custom-table tbody tr {
+    background-color: white;
+    color: #1e3a8a; /* لون النص الكحلي */
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: white;
+}
+.pink-text {
+    color: #AB0362; /* أو أي درجة من الزهري تفضلها */
+    }

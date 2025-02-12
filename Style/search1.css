@@ -1,0 +1,80 @@
+body {
+    background-color: #F4F7FE !important;
+    overflow-y: hidden; /* إخفاء شريط التمرير العمودي */
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif !important;
+
+}
+.navbar {
+    border: none !important;
+    box-shadow: none !important;
+    position: fixed;
+    top: 0;
+    width: 30%;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 60px;
+    margin-right: 250px; /* لضبط المسافة من اليمين */
+}
+.navbar .container-fluid {
+    direction: ltr;
+    border-radius: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white !important; /* تعيين الخلفية الحمراء للمستطيل */
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: auto; /* دفع العناصر إلى أقصى اليسار */
+    white-space: nowrap;
+}
+
+.navbar .container-fluid {
+    direction: ltr; /* قلب اتجاه العناصر */
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+     justify-content: flex-start; /* دفع العناصر إلى اليسار */
+}
+.navbar .d-flex {
+    margin-left: auto; /* نقل العناصر إلى اليسار */
+    margin-right: 0;
+}
+    .navbar .input-group-append {
+  margin-left: -1px; /* تخلص من أي مسافة غير مرغوبة */
+margin-right: 0;
+}
+.navbar .input-group-text {
+    border-radius: 49px !important;
+    background-color: transparent !important;
+    border: none !important;
+    width: 40px; /* زيادة عرض الزر */
+    margin-right: -60px; /* إزاحة الزر لليمين */
+}
+
+   .navbar .form-control {
+     border-radius: 49px!important; /* تقريب زوايا مربع البحث */
+       background-color: transparent !important;
+       border: 1px solid #ced4da !important;
+    
+  }
+
+    .navbar-icon {
+        width: 23px;
+        height: 23px;
+    }
+    .mx-2 {
+        margin-left: -20px; /* غيّر القيمة حسب الحاجة */
+    }
+    

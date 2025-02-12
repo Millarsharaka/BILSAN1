@@ -1,0 +1,102 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F7FE !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.page-title {
+    position: absolute;
+    top: 70px;
+    right: 290px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #AB0362;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 30px;
+    right: 290px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+       /* تخصيص الأنماط للعناصر الجديدة */
+       .profile-header {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .profile-summary {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 2;
+        margin-top: -50px; /* تعديل هنا لرفع العنصر */
+    }
+    .profile-summary img {
+
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .profile-summary p {
+        margin-bottom: 0;
+        font-size: 0.9rem; /* تقليل حجم الخط */
+        color: #718096; /* لون رمادي */
+    }
+
+    .profile-info {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+    }
+
+    .data-label {
+        font-weight: bold;
+        margin-left: 5px;
+        color: #718096; /* لون رمادي */
+
+    }
+    .email-link {
+        color: #718096;
+    }
+
+    .data-value {
+        color: #6c757d;
+    }
+
+    .academic-info {
+        margin-top: 20px;
+    }
+    .section-title {
+        color: #2B3674;
+    }
